@@ -1,0 +1,39 @@
+.About {
+  padding: 20px 10px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.aboutLogo {
+  flex-basis: 50%;
+}
+.aboutLogo img {
+  max-width: 100%;
+}
+.aboutContent {
+  padding: 20px;
+  border: 2px solid #fbb033;
+  flex-basis: 50%;
+}
+.aboutContent h2 {
+  color: #5a5b5c;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 100% */
+  text-transform: uppercase;
+}
+.aboutContent p {
+  color: #5a5b5c;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+  font-family: Inter;
+  font-size: 20.25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31.2px; /* 154.074% */
+}
