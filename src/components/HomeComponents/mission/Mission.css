@@ -1,27 +1,27 @@
-.About {
-  padding: 20px 10px;
-  background: #fff;
+.Mission {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 15px;
+  align-items: flex-start;
+  gap: 20px;
+  height: 500px;
 }
-.aboutLogo {
+.imgMission {
   flex-basis: 50%;
   height: 100%;
   max-height: 100%;
 }
-.aboutLogo img {
-  max-width: 100%;
-  height: 100%;
+.imgMission img {
+  width: 100%;
+  max-height: 100%;
 }
-.aboutContent {
-  /* max-height: 480px; */
-  padding: 80px 20px;
-  border: 2px solid #fbb033;
+.MissionContent {
   flex-basis: 50%;
+  border: 2px solid #fbb033;
+  padding: 80px 50px;
+  min-height: 450px;
+  margin: 0 15px;
 }
-.aboutContent h2 {
+.MissionContent h2 {
   color: #5a5b5c;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
   font-family: Montserrat;
@@ -31,26 +31,18 @@
   line-height: 30px; /* 100% */
   text-transform: uppercase;
 }
-.aboutContent p {
+.MissionContent p {
   color: #5a5b5c;
-  text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
   font-family: Inter;
-  font-size: 20.25px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 31.2px; /* 154.074% */
 }
-.aboutText {
-  position: relative;
-}
-.aboutContent .lastQ {
-  position: absolute;
-  bottom: -5%;
-  right: 10px;
-}
+
 @media (max-width: 767px) {
-  .About {
+  .Mission {
     flex-direction: column;
   }
 }
