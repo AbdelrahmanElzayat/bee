@@ -1,0 +1,87 @@
+.ProductList {
+  padding: 60px 0;
+}
+.products {
+  margin-top: 20px;
+}
+.makeBtn {
+  padding: 14px 100px;
+  margin: auto;
+}
+.Product {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid rgba(175, 175, 175, 0.3);
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.productTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+}
+.productImg {
+  width: 40px;
+}
+.productImg img {
+  max-width: 100%;
+  height: 100%;
+}
+.productTitle h2 {
+  color: #000;
+  font-family: "IBM Plex Sans";
+  font-size: 29.3px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 41.07px; /* 140.171% */
+  margin: 0;
+}
+.productDescription {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.productDescription span {
+  color: #afafaf;
+  font-family: "IBM Plex Sans";
+  font-size: 14.7px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20.53px; /* 139.66% */
+}
+.productDescription p {
+  color: #000;
+  font-family: "IBM Plex Sans";
+  font-size: 15.3px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21.47px; /* 140.327% */
+  margin: 0;
+}
+.newProduct h2:first-child {
+  color: #000;
+  font-family: "IBM Plex Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 41.07px; /* 102.675% */
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .productTitle {
+    gap: 10px;
+  }
+  .productTitle h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .productDescription p {
+    font-size: 12px;
+  }
+  .newProduct h2:first-child {
+    font-size: 24px;
+  }
+}

@@ -1,17 +1,20 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { Container, NavDropdown, NavLink } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import logo from "../../../assets/images/logo.png";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const header = () => {
   return (
     <header className="header">
       <Container>
         <div className="headerContainer">
-          <NavLink to={"/"}>
+          <NavLink
+            className={({ isActive }) => (isActive ? "activeLink" : "")}
+            to={"/"}
+          >
             <div className="logo">
               <img src={logo} alt="logo" />
             </div>
@@ -21,21 +24,52 @@ const header = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
                 <Nav.Link>
-                  <NavLink className={"active"} to={"/"}>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "activeLink" : "")}
+                    to={"/"}
+                  >
                     Home
                   </NavLink>
                 </Nav.Link>
                 <Nav.Link>
-                  <NavLink to={"/"}>portfolio</NavLink>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "activeLink" : "")}
+                    to={"/portfolio"}
+                  >
+                    portfolio
+                  </NavLink>
                 </Nav.Link>
                 <Nav.Link>
-                  <NavLink to={"/"}>Order now</NavLink>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "activeLink" : "")}
+                    to={"/career"}
+                  >
+                    career
+                  </NavLink>
                 </Nav.Link>
                 <Nav.Link>
-                  <NavLink to={"/"}>about us</NavLink>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? "activeLink" : "")}
+                    to={"/"}
+                  >
+                    Order now
+                  </NavLink>
                 </Nav.Link>
+                {/* <Nav.Link>
+                  <NavLink
+                    className={({isActive}) => (isActive ? "activeLink" : "")}
+                    to={"/"}
+                  >
+                    about us
+                  </NavLink>
+                </Nav.Link> */}
                 <Nav.Link>
-                  <NavLink to={"/"} className="contactLink">
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "activeLink contactLink" : "contactLink"
+                    }
+                    to={"/"}
+                  >
                     Contact Us
                   </NavLink>
                 </Nav.Link>

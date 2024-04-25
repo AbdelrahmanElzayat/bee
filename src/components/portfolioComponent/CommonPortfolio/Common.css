@@ -1,0 +1,53 @@
+.Common {
+  min-height: 60vh;
+  background-image: url("../../../assets/images/commonPortfolio.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Common::after {
+  content: "";
+  background: linear-gradient(81deg, #000 0%, rgba(84, 84, 84, 0.4) 100%);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.Common .container {
+  height: 100%;
+  color: #fff;
+  position: relative;
+  z-index: 3 !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.filterProducts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.searchInput {
+  flex-basis: 200%;
+}
+.filterProducts i {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  left: 15px;
+  color: #000;
+}
+@media (max-width: 767px) {
+  .filterProducts {
+    flex-direction: column;
+  }
+}
