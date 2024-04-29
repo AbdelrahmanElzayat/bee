@@ -56,14 +56,14 @@ const header = () => {
                     Order now
                   </NavLink>
                 </Nav.Link>
-                {/* <Nav.Link>
+                <Nav.Link>
                   <NavLink
-                    className={({isActive}) => (isActive ? "activeLink" : "")}
-                    to={"/"}
+                    className={({ isActive }) => (isActive ? "activeLink" : "")}
+                    to={"/about-us"}
                   >
                     about us
                   </NavLink>
-                </Nav.Link> */}
+                </Nav.Link>
                 <Nav.Link>
                   <NavLink
                     className={({ isActive }) =>
