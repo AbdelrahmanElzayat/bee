@@ -1,0 +1,105 @@
+.CareerContent {
+  padding: 50px 0;
+  min-height: 100vh;
+  background-position: bottom;
+  background-image: url("../../../assets/images/careerbg.png");
+  background-repeat: no-repeat;
+}
+.CareerContent h2 {
+  color: #000;
+  font-family: Arial;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 104.167% */
+  margin: 0;
+  margin-bottom: 80px;
+}
+.CareerContentForm_info,
+.CareerContentForm_info_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.CareerContentForm_info > span {
+  border-radius: 16px;
+  background: #fbb033;
+  padding: 6.9px 20px;
+  width: 88.31px;
+  display: block;
+  margin-bottom: 30px;
+}
+.CareerContentForm_info_content h3 {
+  color: #000;
+  font-family: "IBM Plex Sans";
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 128.205% */
+  margin: 0;
+  margin-bottom: 25px;
+}
+.CareerContentForm_info_content p {
+  color: #000;
+  font-family: "IBM Plex Sans";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 157.143% */
+  margin: 0;
+  margin-bottom: 25px;
+}
+.callInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+.callInfo .call {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+.callInfo .call span {
+  color: #000;
+  font-family: "IBM Plex Sans";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 157.143% */
+}
+.callInfo {
+  margin-bottom: 50px;
+}
+.followUs {
+  display: flex;
+  gap: 20px;
+}
+.followUs span {
+  color: #000;
+  font-family: "IBM Plex Sans";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 157.143% */
+}
+.followUs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.CareerContentForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.CareerContentForm_info {
+  flex: 1;
+}

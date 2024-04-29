@@ -1,0 +1,135 @@
+.CommonForm {
+  padding: 50px 20px 20px;
+  border-radius: 20px;
+  background: #f8f6f1;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  flex-basis: 40%;
+  /* flex: 1; */
+  /* width: 509px; */
+  /* height: 778px; */
+}
+.CommonForm form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.formGroup label {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "IBM Plex Sans";
+  font-size: 15.3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.47px; /* 140.327% */
+}
+.formGroup input {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid #afafaf;
+  padding: 10px 10px;
+  width: 100%;
+}
+.formGroupPhone {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.formGroupPhone select {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid #afafaf;
+  padding: 10px 10px;
+}
+
+.file-upload {
+  margin-top: 15px;
+  text-align: center;
+  border: 3px dashed #fbb033;
+  width: 100%;
+  padding: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.file-upload h3 {
+  color: #454545;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+.file-upload span {
+  color: #fbb033;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+.file-upload p {
+  color: #676767;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+.file-upload input {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.formGroup textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid #afafaf;
+  padding: 10px 10px;
+  width: 100%;
+  height: 100px;
+}
+.submitBtn {
+  margin: auto;
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: #f8f6f1;
+  width: 161.36px;
+  height: 60px;
+  padding: 18.33px 53.636px 18.34px 54px;
+
+  color: #000;
+  text-align: center;
+  font-family: "IBM Plex Sans";
+  font-size: 16.7px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.33px; /* 139.701% */
+}

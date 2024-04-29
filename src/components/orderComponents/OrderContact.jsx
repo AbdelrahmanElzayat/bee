@@ -1,19 +1,14 @@
 import { Container } from "react-bootstrap";
-import "./CareerContent.css";
-import CommonForm from "../../CommonForm/CommonForm";
-const CareerContent = () => {
+import OrderForm from "./OrderForm";
+// import "./CareerContent.css";
+const OrderContact = () => {
   return (
     <div className="CareerContent">
       <Container>
-        <h2>
-          Take an opportunity to be a part of our <br /> team to make a
-          difference.
-        </h2>
         <div className="CareerContentForm">
           <div className="CareerContentForm_info">
-            <span>join us</span>
             <div className="CareerContentForm_info_content">
-              <h3>Work with bee group</h3>
+              <h3>Make Your Order</h3>
               <p>
                 Fill up the form and our team will get back to you <br />
                 within 24 hours from now.
@@ -173,11 +168,11 @@ const CareerContent = () => {
               </ul>
             </div>
           </div>
-          <CommonForm/>
+          <OrderForm />
         </div>
       </Container>
     </div>
   );
 };
 
-export default CareerContent;
+export default OrderContact;

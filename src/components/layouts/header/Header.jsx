@@ -5,8 +5,9 @@ import logo from "../../../assets/images/logo.png";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Header.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 const header = () => {
+  const navigate = useNavigate();
   return (
     <header className="header">
       <Container>
@@ -36,7 +37,7 @@ const header = () => {
                     className={({ isActive }) => (isActive ? "activeLink" : "")}
                     to={"/portfolio"}
                   >
-                    portfolio
+                    Portfolio
                   </NavLink>
                 </Nav.Link>
                 <Nav.Link>
@@ -44,13 +45,13 @@ const header = () => {
                     className={({ isActive }) => (isActive ? "activeLink" : "")}
                     to={"/career"}
                   >
-                    career
+                    Career
                   </NavLink>
                 </Nav.Link>
                 <Nav.Link>
                   <NavLink
                     className={({ isActive }) => (isActive ? "activeLink" : "")}
-                    to={"/"}
+                    to={"/order"}
                   >
                     Order now
                   </NavLink>
@@ -68,7 +69,7 @@ const header = () => {
                     className={({ isActive }) =>
                       isActive ? "activeLink contactLink" : "contactLink"
                     }
-                    to={"/"}
+                    to={"/contact-us"}
                   >
                     Contact Us
                   </NavLink>
@@ -76,7 +77,12 @@ const header = () => {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <button className="contactBtn">Contact Us</button>
+          <button
+            className="contactBtn"
+            onClick={() => navigate("/contact-us")}
+          >
+            Contact Us
+          </button>
         </div>
       </Container>
     </header>
